@@ -144,12 +144,12 @@ $sessionId = $proxy-&gt;login('apiUser', 'apiKey'); // TODO : change login and p
 // orderItemIdQty Array is Keyed with Order Item ID, with Value of qty to invoice
 $qty = array('15' =&gt; '1', '16' =&gt; '1');
 
-$invoiceIncrementId = $proxy-&gt;salesOrderInvoiceCreate(
+$result = $proxy-&gt;salesOrderInvoiceCreate(
     $sessionID,
     '200000008',
     $qty
 );
-var_dump($invoiceIncrementId);</pre>
+var_dump($result);</pre>
 		</div>
 </div></div>
 
